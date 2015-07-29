@@ -1,9 +1,10 @@
 {
   "name": "web",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "Chess web interface",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "grunt jshint && mocha --recursive"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -13,5 +14,9 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.11.2"
   }
 }
